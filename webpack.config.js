@@ -12,14 +12,20 @@ module.exports = {
     filename: 'bundle.js',
     publicPath: '/assets'
   },
-  loaders: [
-    { test: /\.js$/, exclude: /node_modules/, loader: 'babel' }
-  ],
   resolve: {
     extensions: ['', '.js']
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
-  ]
+  ],
+  module: {
+    loaders: [
+      {
+        test: /\.js$/,
+        include: path.join(__dirname, 'app'),
+        loader: 'babel'
+      }
+    ]
+  }
 }
