@@ -5,6 +5,7 @@
   "main": "index.js",
   "private": true,
   "scripts": {
+    "start": "nodemon ./app/server/boot",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,6 +17,7 @@
   "devDependencies": {
     "babel": "^5.8.23",
     "jade": "^1.11.0",
+    "nodemon": "^1.7.1",
     "webpack": "^1.12.2",
     "webpack-dev-middleware": "^1.2.0",
     "webpack-hot-middleware": "^2.4.1"

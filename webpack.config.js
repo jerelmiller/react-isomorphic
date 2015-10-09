@@ -1,4 +1,5 @@
-var webpack = require('webpack')
+var webpack = require('webpack'),
+    path = require('path')
 
 module.exports = {
   devtool: 'eval-source-map',
@@ -7,9 +8,9 @@ module.exports = {
     './app/index'
   ],
   output: {
-    path: './public/javascripts/',
+    path: path.join(__dirname, 'public/javascripts'),
     filename: 'bundle.js',
-    publicPath: '/'
+    publicPath: '/assets'
   },
   loaders: [
     { test: /\.js$/, exclude: /node_modules/, loader: 'babel' }
