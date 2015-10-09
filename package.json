@@ -12,5 +12,17 @@
     "url": "git+https://github.com/jerelmiller/react-isomorphic.git"
   },
   "author": "Jerel Miller",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "jade": "^1.11.0",
+    "webpack": "^1.12.2",
+    "webpack-dev-middleware": "^1.2.0",
+    "webpack-hot-middleware": "^2.4.1"
+  },
+  "dependencies": {
+    "express": "^4.13.3",
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0"
+  }
 }
